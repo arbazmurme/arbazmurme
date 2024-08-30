@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
-import { ThemeProvider } from '../src/components/ThemeContext';
+import '@/styles/globals.css'; // Ensure this path is correct
+import { ThemeProvider } from '../components/brn/ThemeContext'; // Adjust path as needed
 
 function MyApp({ Component, pageProps }) {
   return (
