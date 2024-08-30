@@ -10,8 +10,6 @@ const ThemeSwitcher = () => {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-2xl mb-4">Hello, Next.js!</h1>
       <button
         onClick={toggleTheme}
         className="flex items-center p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
@@ -23,7 +21,6 @@ const ThemeSwitcher = () => {
         )}
         <span className="sr-only">{theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}</span>
       </button>
-    </div>
   );
 };
 
