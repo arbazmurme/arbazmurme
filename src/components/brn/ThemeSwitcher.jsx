@@ -1,4 +1,4 @@
-import { useTheme } from './ThemeContext';
+import { useTheme } from '../brn/ThemeContext'; // Adjust path as needed
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
 const ThemeSwitcher = () => {
@@ -21,6 +21,7 @@ const ThemeSwitcher = () => {
         ) : (
           <MoonIcon className="w-6 h-6 text-gray-400" />
         )}
+        <span className="sr-only">{theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}</span>
       </button>
     </div>
   );

@@ -1,4 +1,4 @@
-import ThemeSwitcher from './ThemeSwitcher';
+import ThemeSwitcher from './brn/ThemeSwitcher'; // Adjust path as needed
 
 const Sidebar = () => {
   return (
