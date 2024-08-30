@@ -14,7 +14,7 @@ const ThemeSwitcher = () => {
       <h1 className="text-2xl mb-4">Hello, Next.js!</h1>
       <button
         onClick={toggleTheme}
-        className="flex items-center p-2 bg-gray-200 dark:bg-gray-800 rounded"
+        className="flex items-center p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
       >
         {theme === 'light' ? (
           <SunIcon className="w-6 h-6 text-yellow-500" />
