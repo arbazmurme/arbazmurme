@@ -8,7 +8,7 @@ const CustomIconAbout = () => {
   return (
     <div className="relative flex items-center group my-2 ">
       {/* Icon Container with dynamic background color */}
-      <Link href={'/'}
+      <Link href={'/about'}
         className={`rounded-full flex items-center bg-transparent transition-all duration-300 transform ${
           theme === "light"
             ? "bg-gray-200 hover:bg-gray-300"

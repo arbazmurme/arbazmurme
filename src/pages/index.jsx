@@ -1,9 +1,9 @@
-import Sidebar from '@/components/Sidebar'; // Adjust path as needed
+import HomePage from "../components/homePage/homePage";
 
 const Home = () => {
   return (
     <>
-      <Sidebar />
+      <HomePage />
     </>
   );
 };

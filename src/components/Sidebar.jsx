@@ -9,8 +9,8 @@ const Sidebar = () => {
         <ThemeSwitcher />
       </div>
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center p-4 space-y-4">
-        <CustomIconHome />
         <CustomIconAbout />
+        <CustomIconHome />
       </div>
     </>
   );
