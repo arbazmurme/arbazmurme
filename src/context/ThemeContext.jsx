@@ -1,3 +1,6 @@
+// app/context/ThemeContext.jsx
+
+"use client";
 import { createContext, useState, useContext } from 'react';
 
 // Create Context
