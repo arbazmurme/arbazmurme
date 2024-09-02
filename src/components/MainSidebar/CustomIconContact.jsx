@@ -2,9 +2,11 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useTheme } from "../../context/ThemeContext";
-const CustomIconContact = () => {
+const CustomIconContact = ({ isActive, sendDataToParent }) => {
   const { theme } = useTheme(); // Accessing the theme from the ThemeContext
-
+  const handleClick = () => {
+    sendDataToParent(4);
+  };
   return (
     <div className="relative flex items-center group my-2 mr-2">
       {/* Icon Container with dynamic background color */}
@@ -13,6 +15,7 @@ const CustomIconContact = () => {
         className={`rounded-full flex items-center bg-transparent transition-all duration-300 transform ${
           theme === "light" ? "hover:bg-gray-300" : "hover:bg-gray-800"
         }`}
+        onClick={handleClick}
       >
         {/* Text that slides and extends on hover */}
         <h1
@@ -29,7 +32,13 @@ const CustomIconContact = () => {
         >
           <EnvelopeIcon
             className={`w-8 h-8 transition-colors duration-300 ${
-              theme === "light" ? "text-[#000000]" : "text-[#ffb400]"
+              theme === "light"
+                ? isActive
+                  ? "text-[#ffb400]" // Active color for light theme
+                  : "text-[#000000]" // Default color for light theme
+                : isActive
+                ? "text-gray-300" // Active color for dark theme
+                : "text-[#ffb400]" // Default color for dark theme
             }`}
           />
         </span>
