@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
-import Sidebar from "../components/Sidebar"
+import Sidebar from "../components/Sidebar";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>
           <Sidebar />
-          {children}
+            {children}
         </ThemeProvider>
       </body>
     </html>
