@@ -1,18 +1,20 @@
 "use client";
 import { HomeIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import { useTheme } from "../../context/ThemeContext";
+import TransitionLink from "../TransitionLink"; // Import TransitionLink
+
 const CustomIconHome = ({ isActive, sendDataToParent }) => {
-  const { theme } = useTheme(); // Accessing the theme from the ThemeContext
+  const { theme } = useTheme();
   const handleClick = () => {
     sendDataToParent(0);
   };
 
   return (
     <div className="relative flex items-center group my-2 ml-6">
-      {/* Icon Container with dynamic background color */}
-      <Link
+      {/* TransitionLink wrapping the icon and text */}
+      <TransitionLink
         href="/"
+        label="home"
         className={`rounded-full flex items-center bg-transparent transition-all duration-300 transform ${
           theme === "light" ? "hover:bg-gray-300" : "hover:bg-gray-800"
         }`}
@@ -43,7 +45,7 @@ const CustomIconHome = ({ isActive, sendDataToParent }) => {
             }`}
           />
         </span>
-      </Link>
+      </TransitionLink>
     </div>
   );
 };

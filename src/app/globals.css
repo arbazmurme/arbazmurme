@@ -23,34 +23,6 @@ body.dark-mode {
   color: var(--text-color-dark);
 }
 
-button {
-  cursor: pointer;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-  background-color: #E28413; /* Button background color */
-  color: #000022; /* Button text color */
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #D07311; /* Slightly darker background on hover */
-}
-
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(226, 132, 19, 0.5); /* Focus ring */
-}
-
-button.dark-mode {
-  background-color: #000022; /* Dark mode button background */
-  color: #FBF5F3; /* Dark mode button text color */
-}
-
-button.dark-mode:hover {
-  background-color: #000011; /* Darker background on hover in dark mode */
-}
-
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; /* Bold */
