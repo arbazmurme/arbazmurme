@@ -1,7 +1,7 @@
 import { ArrowRightIcon, LinkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-
+import "../../common/progress-bar.css";
 const About = () => {
   return (
     <div class="max-w-7xl mx-auto px-4">
@@ -13,7 +13,6 @@ const About = () => {
           <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#ffb400] to-pink-500"></span>
         </h1>
       </div>
-
       <div class="sm:flex items-center max-w-screen-xl">
         <div class="sm:w-1/2 p-10">
           <div class="image object-center text-center">
@@ -96,6 +95,129 @@ const About = () => {
               <ArrowRightIcon className="h-14 w-14 bg-[#ffb400] rounded-full p-4" />
             </span>
           </Link>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap">
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="87"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 87 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">HTML 5</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className="shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 75 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">CSS 3</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className="m-auto shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 67 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold   ">Bootstrap 5</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 97 }}
+              className="rounded-full mb-4 m-auto"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold text-center">Tailwind CSS</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 83 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">React JSX</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 93 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">Next JSX</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 87 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">Node JS</h3>
+          </div>
+        </div>
+        <div className="w-full md:w-1/4 p-4">
+          <div className=" shadow-lg rounded-lg p-6 text-center">
+            <div
+              role="progressbar"
+              aria-valuenow="67"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ "--value": 67 }}
+              className="m-auto rounded-full mb-4"
+            >
+              {/* Progress bar content */}
+            </div>
+            <h3 className="text-lg font-bold">MongoDB</h3>
+          </div>
         </div>
       </div>
     </div>
