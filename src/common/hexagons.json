@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "HTML 5",
+      "description": "This is a description for Hexagon 1",
+      "image": "/1.png"
+    },
+    {
+      "id": 2,
+      "title": "CSS 3",
+      "description": "This is a description for Hexagon 1",
+      "image": "/2.png"
+    }
+    {
+      "id": 3,
+      "title": "bootstrap 5",
+      "description": "This is a description for Hexagon 1",
+      "image": "/3.png"
+    }
+  ]
+  
