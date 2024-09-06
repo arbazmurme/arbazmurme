@@ -1,22 +1,107 @@
-import "../common/hexagons.css";
-import hexagons from "../common/hexagons.json";
-
 const Hexagons = () => {
-
   return (
-    <ul id="hexGrid">
-      {hexagons.map((hexagon) => (
-        <li key={hexagon.id} className="hex">
-          <div className="hexIn">
-            <span className="hexLink">
-              <img src={hexagon.image} alt={hexagon.title} />
-              <h1>{hexagon.title}</h1>
-              <p>{hexagon.description}</p>
-            </span>
-          </div>
-        </li>
-      ))}
-    </ul>
+    <div class="grid grid-cols-10">
+      <div class="p-4 text-center">2</div>
+      <div class="p-4 text-center">1</div>
+      <div class="p-4 text-center">3</div>
+      <div class="p-4 text-center">4</div>
+      <div class="p-4 text-center col-span-2 font-bold text-3xl">
+        My Skills
+      </div>
+      <div class="p-4 text-center">8</div>
+      <div class="p-4 text-center">9</div>
+      <div class="p-4 text-center">10</div>
+      <div class="p-4 text-center">11</div>
+      <div class="p-4 text-center">12</div>
+      <div class="p-4 text-center">13</div>
+      <div class="p-4 text-center">14</div>
+      <div class="p-4 text-center">15</div>
+      <div class="p-4 text-center">16</div>
+      <div class="p-4 text-center">17</div>
+      <div class="p-4 text-center">18</div>
+      <div class="p-4 text-center">19</div>
+      <div class="p-4 text-center">20</div>
+      <div class="p-4 text-center">21</div>
+      <div class="p-4 text-center">22</div>
+      <div class="p-4 text-center">23</div>
+      <div class="p-4 text-center">24</div>
+      <div class="p-4 text-center">25</div>
+      <div class="p-4 text-center">26</div>
+      <div class="p-4 text-center">27</div>
+      <div class="p-4 text-center">28</div>
+      <div class="p-4 text-center">29</div>
+      <div class="p-4 text-center">30</div>
+      <div class="p-4 text-center">31</div>
+      <div class="p-4 text-center">32</div>
+      <div class="p-4 text-center">33</div>
+      <div class="p-4 text-center">34</div>
+      <div class="p-4 text-center">35</div>
+      <div class="p-4 text-center">36</div>
+      <div class="p-4 text-center">37</div>
+      <div class="p-4 text-center">38</div>
+      <div class="p-4 text-center">39</div>
+      <div class="p-4 text-center">40</div>
+      <div class="p-4 text-center">41</div>
+      <div class="p-4 text-center">42</div>
+      <div class="p-4 text-center">43</div>
+      <div class="p-4 text-center">44</div>
+      <div class="p-4 text-center">45</div>
+      <div class="p-4 text-center">46</div>
+      <div class="p-4 text-center">47</div>
+      <div class="p-4 text-center">48</div>
+      <div class="p-4 text-center">49</div>
+      <div class="p-4 text-center">50</div>
+      <div class="p-4 text-center">51</div>
+      <div class="p-4 text-center">52</div>
+      <div class="p-4 text-center">53</div>
+      <div class="p-4 text-center">54</div>
+      <div class="p-4 text-center">55</div>
+      <div class="p-4 text-center">56</div>
+      <div class="p-4 text-center">57</div>
+      <div class="p-4 text-center">58</div>
+      <div class="p-4 text-center">59</div>
+      <div class="p-4 text-center">60</div>
+      <div class="p-4 text-center">61</div>
+      <div class="p-4 text-center">62</div>
+      <div class="p-4 text-center">63</div>
+      <div class="p-4 text-center">64</div>
+      <div class="p-4 text-center">65</div>
+      <div class="p-4 text-center">66</div>
+      <div class="p-4 text-center">67</div>
+      <div class="p-4 text-center">68</div>
+      <div class="p-4 text-center">69</div>
+      <div class="p-4 text-center">70</div>
+      <div class="p-4 text-center">71</div>
+      <div class="p-4 text-center">72</div>
+      <div class="p-4 text-center">73</div>
+      <div class="p-4 text-center">74</div>
+      <div class="p-4 text-center">75</div>
+      <div class="p-4 text-center">76</div>
+      <div class="p-4 text-center">77</div>
+      <div class="p-4 text-center">78</div>
+      <div class="p-4 text-center">79</div>
+      <div class="p-4 text-center">80</div>
+      <div class="p-4 text-center">81</div>
+      <div class="p-4 text-center">82</div>
+      <div class="p-4 text-center">83</div>
+      <div class="p-4 text-center">84</div>
+      <div class="p-4 text-center">85</div>
+      <div class="p-4 text-center">86</div>
+      <div class="p-4 text-center">87</div>
+      <div class="p-4 text-center">88</div>
+      <div class="p-4 text-center">89</div>
+      <div class="p-4 text-center">90</div>
+      <div class="p-4 text-center">91</div>
+      <div class="p-4 text-center">92</div>
+      <div class="p-4 text-center">93</div>
+      <div class="p-4 text-center">94</div>
+      <div class="p-4 text-center">95</div>
+      <div class="p-4 text-center">96</div>
+      <div class="p-4 text-center">97</div>
+      <div class="p-4 text-center">98</div>
+      <div class="p-4 text-center">99</div>
+      <div class="p-4 text-center">100</div>
+    </div>
   );
 };
 
