@@ -16,17 +16,32 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 h-screen p-6">
+      <div className="fixed top-0 right-0 h-screen p-6 z-50">
         <ThemeToggleButton />
       </div>
       {/* SidebarNavigation */}
-      <div className="hidden md:flex">
+      <div className="hidden md:flex ">
         <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4">
-          <CustomIconHome isActive={activeIndex === 0} sendDataToParent={handleItemClick}/>
-          <CustomIconAbout isActive={activeIndex === 1} sendDataToParent={handleItemClick} />
-          <CustomIconWork isActive={activeIndex === 2} sendDataToParent={handleItemClick}/>
-          <CustomIconPortfolio isActive={activeIndex === 3} sendDataToParent={handleItemClick}/>
-          <CustomIconContact isActive={activeIndex === 4} sendDataToParent={handleItemClick}/>
+          <CustomIconHome
+            isActive={activeIndex === 0}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconAbout
+            isActive={activeIndex === 1}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconWork
+            isActive={activeIndex === 2}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconPortfolio
+            isActive={activeIndex === 3}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconContact
+            isActive={activeIndex === 4}
+            sendDataToParent={handleItemClick}
+          />
         </div>
       </div>
       {/* BottomNavigation for mobile screens */}

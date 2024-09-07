@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
+      className="flex items-center p-2 bg-gray-200 dark:bg-gray-800 rounded-full z-50"
     >
       {theme === "light" ? (
         <SunIcon className="w-6 h-6 text-yellow-500" />
