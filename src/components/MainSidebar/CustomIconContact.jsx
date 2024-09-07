@@ -11,7 +11,6 @@ const CustomIconContact = ({ isActive, sendDataToParent }) => {
 
   return (
     <div className="relative flex items-center group my-2 mr-2">
-      {/* TransitionLink wrapping the icon and text */}
       <TransitionLink
         href="/contact"
         label="Contact"
@@ -26,14 +25,13 @@ const CustomIconContact = ({ isActive, sendDataToParent }) => {
         >
           Contact
         </h1>
-
         {/* Icon with dynamic background and text color */}
         <span
           className={`p-2 rounded-full transition-colors duration-300 ${
             theme === "light" ? "bg-gray-300" : "bg-gray-800"
           }`}
         >
-          <EnvelopeIcon
+          <EnvelopeIcon 
             className={`w-8 h-8 transition-colors duration-300 ${
               theme === "light"
                 ? isActive

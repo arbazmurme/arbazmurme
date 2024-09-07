@@ -16,12 +16,12 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 h-screen p-6 z-50">
+      <div className="fixed top-0 right-0 h-screen p-6 z-10">
         <ThemeToggleButton />
       </div>
       {/* SidebarNavigation */}
       <div className="hidden md:flex ">
-        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4">
+        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-10">
           <CustomIconHome
             isActive={activeIndex === 0}
             sendDataToParent={handleItemClick}
