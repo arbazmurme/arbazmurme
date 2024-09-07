@@ -11,12 +11,13 @@ import { SiFreelancer } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import "../../common/progress-bar.css";
-import Hexagons from "../hexagons";
+import SkillsOne from "../skills_2";
+import { PiMouseScroll } from "react-icons/pi";
 const About = () => {
   return (
     <div className="max-w-7xl mx-auto px-4">
       <>
-        <div className="mx-auto text-center mt-12">
+        <div className="mx-auto text-center mt-7">
           <h1 className="text-4xl font-bold text-gray-900 leading-tight mb-2 pb-4 relative">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ffb400] to-pink-500">
               ABOUT <span className="text-primary">ME</span>
@@ -123,8 +124,9 @@ const About = () => {
             </Link>
           </div>
         </div>
+        <PiMouseScroll className="h-10 w-10 text-[#ffb400] m-auto" />
       </>
-      <Hexagons />
+      <SkillsOne />
       <div className="flex flex-wrap">
         <div className="w-1/2 md:w-1/4 p-4">
           <div className=" shadow-lg rounded-lg p-6 text-center">
@@ -247,6 +249,9 @@ const About = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+
     </div>
   );
 };
