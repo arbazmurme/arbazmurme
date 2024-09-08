@@ -10,7 +10,7 @@ const CustomIconePortfolio = ({ isActive, sendDataToParent }) => {
   };
 
   return (
-    <div className="relative flex items-center group my-2 mr-6">
+    <div className="relative flex items-center group my-2 mr-8">
       {/* TransitionLink wrapping the icon and text */}
       <TransitionLink
         href="/Portfolio"
@@ -24,7 +24,7 @@ const CustomIconePortfolio = ({ isActive, sendDataToParent }) => {
         <h1
           className={`opacity-0 transform translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap uppercase tracking-widest px-6`}
         >
-          Portfolio
+          Experience
         </h1>
 
         {/* Icon with dynamic background and text color */}
