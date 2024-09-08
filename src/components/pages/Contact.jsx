@@ -10,11 +10,11 @@ const Contact = () => {
               Contact
             </p>
             <h2 className="font-heading mb-4 font-bold tracking-tight text-3xl sm:text-5xl text-[#ffb400]">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-xl ">
-              Let's discuss how I can contribute to your next big idea. Feel
-              free to reach out, and let's make something great together!
+              Let&apos;s discuss how I can contribute to your next big idea. Feel
+              free to reach out, and let&apos;s make something great together!
             </p>
           </div>
         </div>
@@ -23,9 +23,9 @@ const Contact = () => {
             <div className="h-full pr-6">
               <p className="mt-3 mb-12 text-lg">
                 Are you looking for a skilled developer to bring your project to
-                life? I'm always excited to collaborate on new and challenging
+                life? I&apos;m always excited to collaborate on new and challenging
                 projects. Whether you need a complete web solution or just a bit
-                of technical expertise, I'm here to help.
+                of technical expertise, I&apos;m here to help.
               </p>
               <ul className="mb-6 md:mb-0">
                 <li className="flex">
