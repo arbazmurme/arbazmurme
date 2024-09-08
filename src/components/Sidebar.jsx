@@ -30,12 +30,12 @@ const Sidebar = () => {
             isActive={activeIndex === 1}
             sendDataToParent={handleItemClick}
           />
-          <CustomIconWork
-            isActive={activeIndex === 2}
-            sendDataToParent={handleItemClick}
-          />
           <CustomIconPortfolio
             isActive={activeIndex === 3}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconWork
+            isActive={activeIndex === 2}
             sendDataToParent={handleItemClick}
           />
           <CustomIconContact
