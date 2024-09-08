@@ -32,6 +32,7 @@ const About = () => {
                 height={500}
                 width={500}
                 src="/about.png"
+                alt="ArbazMurme About"
                 className=" opacity-80"
               />
             </div>

@@ -8,7 +8,13 @@ import {
   FaFigma,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiSwiper, SiNextdotjs, SiTailwindcss, } from "react-icons/si";
+import {
+  SiExpress,
+  SiMongodb,
+  SiSwiper,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
 const techIcons = {
@@ -42,7 +48,7 @@ const Project = ({
       isLeft ? "md:flex-row-reverse" : ""
     } gap-10 md:gap-20 items-center mt-12`}
   >
-     {imageSrc && (
+    {imageSrc && (
       <Link href={link} className="w-full md:w-1/2 relative group">
         <Image
           className="max-w-full md:max-w-[400px] filter drop-shadow-[0_4px_15px_rgba(255,180,0,0.7)]"
@@ -53,7 +59,9 @@ const Project = ({
           priority
         />
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-          <span className="text-white text-lg font-bold rounded-md bg-[#ffb400] p-4">Click to visit</span>
+          <span className="text-white text-lg font-bold rounded-md bg-[#ffb400] p-4">
+            Click to visit
+          </span>
         </div>
       </Link>
     )}
@@ -78,6 +86,51 @@ const Project = ({
 const LatestWorks = () => {
   return (
     <div className="max-w-7xl mx-auto px-4">
+      <div class="pt-12 sm:pt-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-[#ffb400]">
+              The Ultimate Data Analytics Platform
+            </h2>
+          </div>
+        </div>
+        <div class="mt-10 pb-12 sm:pb-16">
+          <div class="relative">
+            <div class="absolute inset-0 h-1/2 "></div>
+            <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div class="mx-auto max-w-4xl">
+                <dl class="rounded-lg  shadow-lg sm:grid sm:grid-cols-3">
+                  <div class="flex flex-col border-b p-6 text-center sm:border-0 sm:border-r">
+                    <dt class="order-2 mt-2 text-lg font-normal leading-6">
+                      Years of Experience
+                    </dt>
+                    <dd class="order-1 text-5xl font-bold tracking-tight text-[#ffb400]">
+                      <span>1</span>+
+                    </dd>
+                  </div>
+                  <div class="flex flex-col border-t border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                    <dt class="order-2 mt-2 text-lg font-normal leading-6 ">
+                      finished projects
+                    </dt>
+                    <dd class="order-1 text-5xl font-bold tracking-tight text-[#ffb400]">
+                      <span>6</span>+
+                    </dd>
+                  </div>
+                  <div class="flex flex-col border-t border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l">
+                    <dt class="order-2 mt-2 text-lg font-normal leading-6">
+                      satisfied clients
+                    </dt>
+                    <dd class="order-1 text-5xl font-bold tracking-tight text-[#ffb400]">
+                      <span>1</span>+
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section className="max-w-screen-xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl w-max mx-auto text-center text-[#ffb400] border-b-2 border-[#ffb400] my-10 md:my-20">
           Latest Works

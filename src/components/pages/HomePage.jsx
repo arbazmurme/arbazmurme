@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import TypingText from "../../context/TypingText";
-
 const HomeDetails = () => {
   return (
     <>
@@ -34,7 +33,7 @@ const HomeDetails = () => {
               src="/aa.jpg"
               width={300}
               height={300}
-              className="img-fluid mx-auto"
+              className="img-fluid mx-auto rounded-3xl"
               loading="lazy"
             />
           </div>
@@ -51,7 +50,7 @@ const HomeDetails = () => {
             innovative projects.
           </p>
           <Link
-            href="#_"
+            href="/about"
             className="mt-8 relative group overflow-hidden font-medium inline-block rounded-full border border-[#ffb400] "
           >
             <span className="absolute inset-0 bg-[#ffb400] transform translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0 opacity-90"></span>
