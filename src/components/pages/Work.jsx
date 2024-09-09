@@ -90,7 +90,7 @@ const LatestWorks = () => {
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-5xl text-center">
             <h2 class="text-3xl font-bold tracking-tight text-[#ffb400]">
-              The Ultimate Data Analytics Platform
+              My Work
             </h2>
           </div>
         </div>
