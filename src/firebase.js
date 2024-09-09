@@ -1,17 +1,15 @@
-// src/firebase.js
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getDatabase, ref, push } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-auth-domain",
-  projectId: "your-project-id",
-  storageBucket: "your-storage-bucket",
-  messagingSenderId: "your-messaging-sender-id",
-  appId: "your-app-id",
+  apiKey: "AIzaSyALQ0FxCR1w-qCfoHuKCUt6uK7sVt1g8ME",
+  databaseURL: "https://arbazmurme-54ba9-default-rtdb.firebaseio.com/",
+  projectId: "arbazmurme-54ba9",
 };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const database = getDatabase(app);
 
-export { auth };
+export { auth, database, ref, push };
