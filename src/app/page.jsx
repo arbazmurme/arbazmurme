@@ -16,7 +16,10 @@ export default function Home() {
           property="og:description"
           content="Discover the creative and technical work of Arbaz Murme in this online portfolio, featuring web development projects and design work."
         />
-        <meta property="og:image" content="/home.png" />
+        <meta
+          property="og:image"
+          content="https://arbazmurme.vercel.app/home.png"
+        />
         <meta property="og:url" content="https://arbazmurme.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -25,9 +28,13 @@ export default function Home() {
           name="twitter:description"
           content="View the portfolio of Arbaz Murme, a talented React JS Developer, and explore his projects and designs."
         />
-        <meta name="twitter:image" content="/home.png" />
+        <meta
+          name="twitter:image"
+          content="https://arbazmurme.vercel.app/home.png"
+        />
         <link rel="canonical" href="https://arbazmurme.vercel.app/" />
       </Head>
+
       <main>
         <HomePage />
       </main>
