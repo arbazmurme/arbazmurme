@@ -56,7 +56,7 @@ const ContactForm = () => {
             id="name"
             autoComplete="given-name"
             placeholder="Your name"
-            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0"
+            className=" text-black mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0"
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -76,7 +76,7 @@ const ContactForm = () => {
             id="email"
             autoComplete="email"
             placeholder="Your email address"
-            className="mb-2 w-full rounded-md border border-gray-400 dark:text-gray-800 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+            className=" text-black mb-2 w-full rounded-md border border-gray-400 dark:text-gray-800 py-2 pl-2 pr-4 shadow-md sm:mb-0"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -98,7 +98,7 @@ const ContactForm = () => {
           cols="30"
           rows="5"
           placeholder="Write your message..."
-          className="mb-2 w-full rounded-md border border-gray-400 dark:text-gray-800 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+          className=" text-black mb-2 w-full rounded-md border border-gray-400 dark:text-gray-800 py-2 pl-2 pr-4 shadow-md sm:mb-0"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
