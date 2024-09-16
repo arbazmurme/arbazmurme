@@ -3,9 +3,9 @@ import { getAuth } from 'firebase/auth';
 import { getDatabase, ref, push } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyALQ0FxCR1w-qCfoHuKCUt6uK7sVt1g8ME",
-  databaseURL: "https://arbazmurme-54ba9-default-rtdb.firebaseio.com/",
-  projectId: "arbazmurme-54ba9",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
 };
 
 const app = initializeApp(firebaseConfig);

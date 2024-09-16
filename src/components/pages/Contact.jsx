@@ -79,11 +79,11 @@ const Contact = () => {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-[#ffb400]">
                       Contact
                     </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Mobile: +216 21184010
+                    <p className="">
+                      Mobile: +91 9028121976
                     </p>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Mail: you@mail.com
+                    <p className="">
+                      Mail: arbazmurme@gmail.com
                     </p>
                   </div>
                 </li>
@@ -109,10 +109,10 @@ const Contact = () => {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-[#ffb400]">
                       Available
                     </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
+                    <p className="">
                       As a Web Developer
                     </p>
-                    <p className="text-gray-600 dark:text-slate-400">
+                    <p className="">
                       Currently open for freelance projects.
                     </p>
                   </div>
