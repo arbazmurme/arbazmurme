@@ -15,7 +15,7 @@ const HomeDetails = () => {
           <div className="min-h-screen flex justify-center items-center">
             <Image
               alt="hero man"
-              src="/aa.jpg"
+              src="/arbazmurme.webp"
               width={450}
               height={450}
               className="img-fluid mx-auto rounded-3xl w-[500px] h-[620px] ml-[40px]"
@@ -30,7 +30,7 @@ const HomeDetails = () => {
           <div className="lg:hidden mb-8">
             <Image
               alt="hero man"
-              src="/aa.jpg"
+              src="/arbazmurme.webp"
               width={300}
               height={300}
               className="img-fluid mx-auto rounded-3xl"
