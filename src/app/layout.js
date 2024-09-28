@@ -39,6 +39,21 @@ export default function RootLayout({ children }) {
       <Head>
         {/* Meta Title */}
         <title>My Portfolio | Arbaz Murme - React JS Developer</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* Meta Description */}
         <meta
@@ -64,7 +79,10 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Discover the creative and technical work of Arbaz Murme in this online portfolio, featuring web development projects and design work."
         />
-        <meta property="og:image" content="/home.png" />
+        <meta
+          property="og:image"
+          content="https://arbazmurme.vercel.app/arbazmurme.webp"
+        />
         <meta property="og:url" content="https://arbazmurme.vercel.app/" />
         <meta property="og:type" content="website" />
 
@@ -78,8 +96,12 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="View the portfolio of Arbaz Murme, a talented React JS Developer, and explore his projects and designs."
         />
-        <meta name="twitter:image" content="/home.png" />
+        <meta
+          name="twitter:image"
+          content="https://arbazmurme.vercel.app/home.png"
+        />
       </Head>
+
       <body>
         {/* Google Analytics */}
         <Script
