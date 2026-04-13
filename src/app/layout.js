@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
 import Sidebar from "../components/Sidebar";
+import CustomCursor from "../components/CustomCursor";
 import Script from "next/script";
 
 export const metadata = {
@@ -73,6 +74,7 @@ export default function RootLayout({ children }) {
           }}
         />
         <ThemeProvider>
+          <CustomCursor />
           <Sidebar />
           {children}
         </ThemeProvider>
