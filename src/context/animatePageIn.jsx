@@ -33,5 +33,8 @@ export const animatePageOut = (href, router) => {
           router.push(href);
         }
       });
+    return;
   }
+
+  router.push(href);
 };

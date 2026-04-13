@@ -18,6 +18,7 @@ const TransitionLink = ({ href, label, children, className, onClick }) => {
 
   return (
     <button
+      type="button"
       className={className}
       onClick={handleClick}
     >

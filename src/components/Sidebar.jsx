@@ -6,6 +6,7 @@ import CustomIconAbout from "./MainSidebar/CustomIconAbout";
 import CustomIconportfolio from "./MainSidebar/CustomIconPortfolio";
 import CustomIconContact from "./MainSidebar/CustomIconContact";
 import CustomIconWork from "./MainSidebar/CustomIconWork";
+import CustomIconGame from "./MainSidebar/CustomIconGame";
 import BottomNavigation from "./BottomNavigation";
 const Sidebar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,12 +17,12 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 h-screen p-6 z-10">
+      <div className="fixed top-0 right-0 z-[140] h-screen p-6">
         <ThemeToggleButton />
       </div>
       {/* SidebarNavigation */}
       <div className="hidden md:flex ">
-        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-10">
+        <div className="fixed right-0 top-1/2 z-[140] flex -translate-y-1/2 flex-col items-center space-y-4">
           <CustomIconHome
             isActive={activeIndex === 0}
             sendDataToParent={handleItemClick}
@@ -40,6 +41,10 @@ const Sidebar = () => {
           />
           <CustomIconContact
             isActive={activeIndex === 4}
+            sendDataToParent={handleItemClick}
+          />
+          <CustomIconGame
+            isActive={activeIndex === 5}
             sendDataToParent={handleItemClick}
           />
         </div>

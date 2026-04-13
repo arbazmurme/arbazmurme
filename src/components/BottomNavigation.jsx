@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { useTheme } from "../context/ThemeContext";
 import {
   HomeIcon,
@@ -6,12 +7,14 @@ import {
   CodeBracketSquareIcon,
   UserIcon,
   EnvelopeIcon,
+  PuzzlePieceIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
 import TransitionLink from "../components/TransitionLink"; // Import TransitionLink
 
 const BottomNavigation = () => {
   const { theme } = useTheme();
+  const pathname = usePathname();
   const [activeIndex, setActiveIndex] = useState(0);
 
   const iconStyles = {
@@ -37,24 +40,27 @@ const BottomNavigation = () => {
     { href: "/work", icon: CodeBracketSquareIcon },
     { href: "/portfolio", icon: BriefcaseIcon },
     { href: "/contact", icon: EnvelopeIcon },
+    { href: "/game", icon: PuzzlePieceIcon },
   ];
 
   return (
     <div
-      className={`fixed bottom-0 left-0 z-50 w-full h-16 ${styles.background}`}
+      className={`fixed bottom-0 left-0 z-[160] h-16 w-full ${styles.background}`}
     >
-      <div className="grid h-full max-w-lg grid-cols-5 mx-auto items-center font-medium">
+      <div className="mx-auto grid h-full w-full grid-cols-6 items-center font-medium">
         {navigationItems.map((item, index) => (
           <TransitionLink
             href={item.href}
             label="" // Empty label, as the label is not displayed here
             key={index}
-            className={`inline-flex flex-col items-center justify-center px-4 py-2 ${styles.container} group cursor-pointer`}
+            className={`group inline-flex h-full w-full min-w-0 flex-col items-center justify-center px-2 py-2 ${styles.container} cursor-pointer`}
             onClick={() => setActiveIndex(index)}
           >
             <item.icon
               className={`w-6 h-6 ${
-                activeIndex === index ? styles.active : styles.icon
+                pathname === item.href || activeIndex === index
+                  ? styles.active
+                  : styles.icon
               }`}
             />
           </TransitionLink>
