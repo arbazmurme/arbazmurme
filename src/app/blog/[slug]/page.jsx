@@ -24,12 +24,12 @@ export async function generateMetadata({ params }) {
     keywords: post.tags?.join(", "),
     authors: [{ name: "Arbaz Murme" }],
     alternates: {
-      canonical: `https://yourdomain.com/blog/${post.slug}`,
+      canonical: `/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.shortDescription,
-      url: `https://yourdomain.com/blog/${post.slug}`,
+      url: `/blog/${post.slug}`,
       type: "article",
       publishedTime: post.createdAt,
       images: [
