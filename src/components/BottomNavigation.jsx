@@ -8,65 +8,70 @@ import {
   UserIcon,
   EnvelopeIcon,
   PuzzlePieceIcon,
-} from "@heroicons/react/20/solid";
-import { useState } from "react";
-import TransitionLink from "../components/TransitionLink"; // Import TransitionLink
+} from "@heroicons/react/24/solid";
+import TransitionLink from "../components/TransitionLink";
 
 const BottomNavigation = () => {
   const { theme } = useTheme();
   const pathname = usePathname();
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const iconStyles = {
-    light: {
-      container: "",
-      icon: "text-[#0f0f0f] hover:text-[#ffb400]",
-      background: "bg-gray-300",
-      active: "text-[#ffb400]", // Style for active icon in light theme
-    },
-    dark: {
-      container: "",
-      icon: "text-[#ffb400] hover:text-blue-500",
-      background: "bg-gray-800",
-      active: "text-white", // Style for active icon in dark theme
-    },
-  };
-
-  const styles = iconStyles[theme] || iconStyles.light;
 
   const navigationItems = [
-    { href: "/", icon: HomeIcon },
-    { href: "/about", icon: UserIcon },
-    { href: "/work", icon: CodeBracketSquareIcon },
-    { href: "/portfolio", icon: BriefcaseIcon },
-    { href: "/contact", icon: EnvelopeIcon },
-    { href: "/game", icon: PuzzlePieceIcon },
+    { href: "/", label: "Home", icon: HomeIcon },
+    { href: "/about", label: "About", icon: UserIcon },
+    { href: "/work", label: "Work", icon: CodeBracketSquareIcon },
+    { href: "/portfolio", label: "Experience", icon: BriefcaseIcon },
+    { href: "/contact", label: "Contact", icon: EnvelopeIcon },
+    { href: "/game", label: "Game", icon: PuzzlePieceIcon },
   ];
 
+  const isDark = theme === "dark";
+
   return (
-    <div
-      className={`fixed bottom-0 left-0 z-[160] h-16 w-full ${styles.background}`}
+    <nav
+      aria-label="Mobile navigation"
+      className={`fixed bottom-0 left-0 z-[160] h-16 w-full border-t backdrop-blur-lg transition-colors duration-300 ${
+        isDark
+          ? "border-white/10 bg-[#0f172a]/90 text-gray-300"
+          : "border-gray-200 bg-white/90 text-gray-700 shadow-lg"
+      }`}
     >
-      <div className="mx-auto grid h-full w-full grid-cols-6 items-center font-medium">
-        {navigationItems.map((item, index) => (
-          <TransitionLink
-            href={item.href}
-            label="" // Empty label, as the label is not displayed here
-            key={index}
-            className={`group inline-flex h-full w-full min-w-0 flex-col items-center justify-center px-2 py-2 ${styles.container} cursor-pointer`}
-            onClick={() => setActiveIndex(index)}
-          >
-            <item.icon
-              className={`w-6 h-6 ${
-                pathname === item.href || activeIndex === index
-                  ? styles.active
-                  : styles.icon
+      <div className="mx-auto grid h-full w-full max-w-lg grid-cols-6 items-center px-1">
+        {navigationItems.map((item) => {
+          const isActive = pathname === item.href;
+          const Icon = item.icon;
+
+          return (
+            <TransitionLink
+              href={item.href}
+              label={item.label}
+              key={item.href}
+              className={`group flex h-full w-full flex-col items-center justify-center gap-1 py-1 transition-all duration-200 ${
+                isActive
+                  ? "text-[#ffb400] font-semibold"
+                  : isDark
+                  ? "text-gray-400 hover:text-white"
+                  : "text-gray-600 hover:text-black"
               }`}
-            />
-          </TransitionLink>
-        ))}
+            >
+              <div
+                className={`relative flex items-center justify-center rounded-xl p-1.5 transition-all duration-300 ${
+                  isActive
+                    ? isDark
+                      ? "bg-[#ffb400]/20 text-[#ffb400] scale-110 shadow-sm shadow-[#ffb400]/20"
+                      : "bg-[#ffb400]/25 text-[#d97706] scale-110"
+                    : "hover:bg-black/5 dark:hover:bg-white/5"
+                }`}
+              >
+                <Icon className="h-5 w-5" />
+              </div>
+              <span className="text-[10px] tracking-tight leading-none truncate max-w-[50px]">
+                {item.label}
+              </span>
+            </TransitionLink>
+          );
+        })}
       </div>
-    </div>
+    </nav>
   );
 };
 

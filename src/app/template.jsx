@@ -51,10 +51,10 @@ export default function Template({ children }) {
 
   return (
     <div>
-      <div id="banner-1" className="fixed left-0 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
-      <div id="banner-2" className="fixed left-1/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
-      <div id="banner-3" className="fixed left-2/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
-      <div id="banner-4" className="fixed left-3/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
+      <div id="banner-1" className="pointer-events-none fixed left-0 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
+      <div id="banner-2" className="pointer-events-none fixed left-1/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
+      <div id="banner-3" className="pointer-events-none fixed left-2/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
+      <div id="banner-4" className="pointer-events-none fixed left-3/4 top-0 z-10 min-h-screen w-1/4 bg-[#ffb400]" />
       <div ref={pageRef}>
         {children}
       </div>

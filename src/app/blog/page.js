@@ -1,4 +1,4 @@
-import advancedBlogs from "@/data/advancedBlogs";
+import advancedBlogs from "@/data/advancedBlogs.json";
 import BlogClient from "./BlogClient";
 
 export const metadata = {

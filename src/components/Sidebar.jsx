@@ -1,55 +1,46 @@
 "use client";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 import ThemeToggleButton from "./ThemeToggleButton";
 import CustomIconHome from "./MainSidebar/CustomIconHome";
 import CustomIconAbout from "./MainSidebar/CustomIconAbout";
+import CustomIconWork from "./MainSidebar/CustomIconWork";
 import CustomIconportfolio from "./MainSidebar/CustomIconPortfolio";
 import CustomIconContact from "./MainSidebar/CustomIconContact";
-import CustomIconWork from "./MainSidebar/CustomIconWork";
 import CustomIconGame from "./MainSidebar/CustomIconGame";
 import BottomNavigation from "./BottomNavigation";
-const Sidebar = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleItemClick = (index) => {
-    setActiveIndex(index);
-  };
+const Sidebar = () => {
+  const pathname = usePathname();
 
   return (
     <>
-      <div className="fixed top-0 right-0 z-[140] h-screen p-6">
+      <div className="fixed top-0 right-0 z-[140] p-6">
         <ThemeToggleButton />
       </div>
-      {/* SidebarNavigation */}
-      <div className="hidden md:flex ">
+      {/* Desktop Sidebar Navigation */}
+      <div className="hidden md:flex">
         <div className="fixed right-0 top-1/2 z-[140] flex -translate-y-1/2 flex-col items-center space-y-4">
           <CustomIconHome
-            isActive={activeIndex === 0}
-            sendDataToParent={handleItemClick}
+            isActive={pathname === "/"}
           />
           <CustomIconAbout
-            isActive={activeIndex === 1}
-            sendDataToParent={handleItemClick}
-          />
-          <CustomIconportfolio
-            isActive={activeIndex === 3}
-            sendDataToParent={handleItemClick}
+            isActive={pathname === "/about"}
           />
           <CustomIconWork
-            isActive={activeIndex === 2}
-            sendDataToParent={handleItemClick}
+            isActive={pathname === "/work"}
+          />
+          <CustomIconportfolio
+            isActive={pathname === "/portfolio"}
           />
           <CustomIconContact
-            isActive={activeIndex === 4}
-            sendDataToParent={handleItemClick}
+            isActive={pathname === "/contact"}
           />
           <CustomIconGame
-            isActive={activeIndex === 5}
-            sendDataToParent={handleItemClick}
+            isActive={pathname === "/game"}
           />
         </div>
       </div>
-      {/* BottomNavigation for mobile screens */}
+      {/* Bottom Navigation for mobile screens */}
       <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
         <BottomNavigation />
       </div>

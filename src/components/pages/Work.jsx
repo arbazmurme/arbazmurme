@@ -29,7 +29,6 @@ import {
   SiRedis,
   SiDjango,
   SiPostman,
-  SiOracle,
   SiJquery,
   SiTypescript,
   SiVercel,
@@ -66,7 +65,7 @@ const techIcons = {
   "#mongodb": <SiMongodb />,
   "#mongoose": <SiMongodb />,
   "#sql": <FaDatabase />,
-  "#oracle": <SiOracle />,
+  "#oracle": <FaDatabase />,
   "#redis": <SiRedis />,
 
   // Auth & Security
@@ -545,7 +544,7 @@ const ProjectCard = ({ project, index }) => {
           </span>
         </div>
 
-        <p className="leading-relaxed text-justify">
+        <p className="leading-relaxed text-slate-700 dark:text-gray-300">
           {description}
         </p>
 
@@ -554,7 +553,7 @@ const ProjectCard = ({ project, index }) => {
           {techs.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center gap-1 px-3 py-1 text-xs md:text-sm bg-gray-800/80 text-gray-200 rounded-full border border-gray-700 hover:border-[#ffb400] hover:text-[#ffb400] hover:bg-gray-800 transition-all duration-300"
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-xs md:text-sm bg-slate-200/80 dark:bg-gray-800/80 text-slate-800 dark:text-gray-200 rounded-full border border-slate-300 dark:border-gray-700 hover:border-[#ffb400] hover:text-[#ffb400] transition-all duration-300"
             >
               <span className="text-[#ffb400] text-sm">{getTechIcon(tag)}</span>
               {tag.replace("#", "")}
@@ -675,25 +674,25 @@ const LatestWorks = () => {
 
       {/* Metrics */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20 relative z-1">
-        <div className="group bg-gray-900/10 backdrop-blur-sm p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
+        <div className="group bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-6 rounded-2xl text-center border border-slate-200 dark:border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
           <div className="text-5xl font-bold text-[#ffb400] mb-2 group-hover:scale-110 transition-transform duration-300">
             3+
           </div>
-          <p className=" text-lg">Years of Experience</p>
+          <p className="text-lg text-slate-800 dark:text-gray-200">Years of Experience</p>
           <div className="w-12 h-1 bg-gradient-to-r from-[#ffb400] to-pink-500 mx-auto mt-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        <div className="group bg-gray-900/10 backdrop-blur-sm p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
+        <div className="group bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-6 rounded-2xl text-center border border-slate-200 dark:border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
           <div className="text-5xl font-bold text-[#ffb400] mb-2 group-hover:scale-110 transition-transform duration-300">
             24+
           </div>
-          <p className="text-lg">Finished Projects</p>
+          <p className="text-lg text-slate-800 dark:text-gray-200">Finished Projects</p>
           <div className="w-12 h-1 bg-gradient-to-r from-[#ffb400] to-pink-500 mx-auto mt-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-        <div className="group bg-gray-900/10 backdrop-blur-sm p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
+        <div className="group bg-white/60 dark:bg-gray-900/40 backdrop-blur-sm p-6 rounded-2xl text-center border border-slate-200 dark:border-gray-800 hover:border-[#ffb400] transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ffb400]/10">
           <div className="text-5xl font-bold text-[#ffb400] mb-2 group-hover:scale-110 transition-transform duration-300">
             19+
           </div>
-          <p className=" text-lg">Satisfied Clients</p>
+          <p className="text-lg text-slate-800 dark:text-gray-200">Satisfied Clients</p>
           <div className="w-12 h-1 bg-gradient-to-r from-[#ffb400] to-pink-500 mx-auto mt-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       </div>
