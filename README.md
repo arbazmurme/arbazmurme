@@ -119,17 +119,17 @@ Score: `73.03%`
 ## Dynamic GitHub Stats
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=arbazmurme&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=arbazmurme&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+  <img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=arbazmurme&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+  <img width="49%" src="https://streak-stats.demolab.com/?user=arbazmurme&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
 <p align="center">
-  <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arbazmurme&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
-  <img width="52%" src="https://github-profile-trophy.vercel.app/?username=arbazmurme&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&margin-h=10" alt="GitHub trophies" />
+  <img width="42%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=arbazmurme&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+  <img width="52%" src="https://github-profile-trophy-xi.vercel.app/?username=arbazmurme&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&margin-h=10" alt="GitHub trophies" />
 </p>
 
 <p align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=arbazmurme&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph" />
+  <img width="95%" src="https://activity-graph.vercel.app/graph?username=arbazmurme&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph" />
 </p>
 
 <p align="center">
